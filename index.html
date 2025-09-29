@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciwano Barbershop</title>
+    <meta name="description" content="Exklusiver Barbershop für perfekte Haarschnitte und Bartpflege in Berlin. Traditionelle Handwerkskunst meets moderner Stil.">
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://static.photos/black/1200x630/10');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i data-feather="scissors" class="text-secondary mr-2"></i>
+                <span class="text-xl font-bold">Ciwano Barbershop</span>
+</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-secondary transition-all">Start</a>
+                <a href="#services" class="hover:text-secondary transition-all">Preise</a>
+                <a href="#gallery" class="hover:text-secondary transition-all">Galerie</a>
+                <a href="#contact" class="hover:text-secondary transition-all">Kontakt</a>
+</div>
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-primary px-4 pb-4" id="mobile-menu">
+            <a href="#home" class="block py-2 hover:text-secondary">Start</a>
+            <a href="#services" class="block py-2 hover:text-secondary">Preise</a>
+            <a href="#gallery" class="block py-2 hover:text-secondary">Galerie</a>
+            <a href="#contact" class="block py-2 hover:text-secondary">Kontakt</a>
+</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image h-screen flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">CIWANO BARBERSHOP</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Meisterhafte Haarschnitte und Bartpflege seit 2010</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+49301234567" class="bg-secondary hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full transition-all inline-flex items-center justify-center text-md">
+                    <i data-feather="phone" class="mr-2"></i>
+                    RUF UNS AN: 030 1234567
+                </a>
+                <a href="https://maps.google.com" class="border-2 border-white hover:bg-white hover:text-black text-white font-bold py-2 px-6 rounded-full transition-all inline-flex items-center justify-center text-md">
+                    <i data-feather="map-pin" class="mr-2"></i>
+                    STANDORT ANZEIGEN
+                </a>
+</div>
+</div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="http://static.photos/black/640x360/15" alt="Barbershop Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">ÜBER CIWANO</h2>
+                    <p class="text-lg mb-6">Seit 2010 steht Ciwano Barbershop für erstklassige Haarschnitte und Bartpflege in Berlin. Wir verbinden italienische Handwerkskunst mit modernen Stilen für Ihren perfekten Look.</p>
+<div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="text-secondary mr-2"></i>
+                            <span>Experten mit 10+ Jahren Erfahrung</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="text-secondary mr-2"></i>
+                            <span>Hochwertige Produkte</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="text-secondary mr-2"></i>
+                            <span>Individuelle Beratung</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="check-circle" class="text-secondary mr-2"></i>
+                            <span>Entspannte Atmosphäre</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">UNSERE PREISE</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition-all">
+                    <div class="text-secondary mb-4">
+                        <i data-feather="user" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Herrenhaarschnitt</h3>
+                    <p class="text-gray-600 mb-4">Präziser Schnitt mit Schere und Maschine, inklusive Styling.</p>
+                    <p class="text-primary font-bold text-2xl">35€</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition-all">
+                    <div class="text-secondary mb-4">
+                        <i data-feather="zap" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Premium Bartpflege</h3>
+                    <p class="text-gray-600 mb-4">Barttrimmen, Formgebung und Finish mit hochwertigen Produkten.</p>
+                    <p class="text-primary font-bold text-2xl">30€</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition-all">
+                    <div class="text-secondary mb-4">
+                        <i data-feather="scissors" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Haarschnitt & Bart</h3>
+                    <p class="text-gray-600 mb-4">Kombination aus Haarschnitt und Bartpflege für den perfekten Look.</p>
+                    <p class="text-primary font-bold text-2xl">50€</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition-all">
+                    <div class="text-secondary mb-4">
+                        <i data-feather="star" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Royal Treatment</h3>
+                    <p class="text-gray-600 mb-4">Haarschnitt, Bartpflege, Gesichtsmaske und Kopfhautmassage.</p>
+                    <p class="text-primary font-bold text-2xl">75€</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition-all">
+                    <div class="text-secondary mb-4">
+                        <i data-feather="wind" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kinderschnitt</h3>
+                    <p class="text-gray-600 mb-4">Professioneller Haarschnitt für kleine Herren bis 12 Jahre.</p>
+                    <p class="text-primary font-bold text-2xl">25€</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition-all">
+                    <div class="text-secondary mb-4">
+                        <i data-feather="droplet" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Nassrasur</h3>
+                    <p class="text-gray-600 mb-4">Traditionelle Nassrasur mit heißem Handtuch und Rasiercreme.</p>
+                    <p class="text-primary font-bold text-2xl">25€</p>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition-all">
+                    <div class="text-secondary mb-4">
+                        <i data-feather="eye" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Augenbrauen</h3>
+                    <p class="text-gray-600 mb-4">Professionelle Augenbrauenkorrektur und Styling.</p>
+                    <p class="text-primary font-bold text-2xl">15€</p>
+                </div>
+</div>
+</div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">GALERIE</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="http://static.photos/people/320x240/1" alt="Haarschnitt" class="rounded-lg shadow hover:opacity-90 transition-all cursor-pointer">
+                <img src="http://static.photos/people/320x240/2" alt="Bartpflege" class="rounded-lg shadow hover:opacity-90 transition-all cursor-pointer">
+                <img src="http://static.photos/people/320x240/3" alt="Styling" class="rounded-lg shadow hover:opacity-90 transition-all cursor-pointer">
+                <img src="http://static.photos/people/320x240/4" alt="Rasur" class="rounded-lg shadow hover:opacity-90 transition-all cursor-pointer">
+                <img src="http://static.photos/people/320x240/5" alt="Haarschnitt" class="rounded-lg shadow hover:opacity-90 transition-all cursor-pointer">
+                <img src="http://static.photos/people/320x240/6" alt="Bartpflege" class="rounded-lg shadow hover:opacity-90 transition-all cursor-pointer">
+                <img src="http://static.photos/people/320x240/7" alt="Styling" class="rounded-lg shadow hover:opacity-90 transition-all cursor-pointer">
+            </div>
+</div>
+    </section>
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">JETZT TERMIN VEREINBAREN</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Rufen Sie uns direkt an für Ihren persönlichen Termin - wir beraten Sie gerne!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+49301234567" class="bg-secondary hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full transition-all inline-flex items-center justify-center text-md">
+                    <i data-feather="phone" class="mr-2"></i>
+                    TELEFON: 030 1234567
+                </a>
+                <a href="https://wa.me/49301234567" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition-all inline-flex items-center justify-center text-md">
+                    <i data-feather="message-square" class="mr-2"></i>
+                    WHATSAPP-NACHRICHT
+                </a>
+</div>
+        </div>
+    </section>
+<!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-6">KONTAKT</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="text-secondary mr-3 mt-1"></i>
+                            <div>
+                                <h3 class="font-bold">Adresse</h3>
+                                <p>Musterstraße 123<br>10115 Berlin</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="text-secondary mr-3 mt-1"></i>
+                            <div>
+                                <h3 class="font-bold">Telefon</h3>
+                                <p>+49 30 1234567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="text-secondary mr-3 mt-1"></i>
+                            <div>
+                                <h3 class="font-bold">Email</h3>
+                                <p>info@sharpblade-barber.de</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="clock" class="text-secondary mr-3 mt-1"></i>
+                            <div>
+                                <h3 class="font-bold">Öffnungszeiten</h3>
+                                <p>Mo - Fr: 9:00 - 19:00<br>Sa: 9:00 - 16:00<br>So: Geschlossen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="font-bold mb-3">Folge uns</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-primary hover:text-secondary transition-all">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary transition-all">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-primary hover:text-secondary transition-all">
+                                <i data-feather="twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                        <h3 class="text-xl font-bold mb-4">KONTAKTIEREN SIE UNS</h3>
+                        <p class="mb-6">Für Termine nur telefonisch oder per WhatsApp:</p>
+                        <div class="flex flex-col gap-4">
+                            <a href="tel:+49301234567" class="bg-primary hover:bg-black text-white font-bold py-3 px-5 rounded-full transition-all inline-flex items-center justify-center text-md">
+                                <i data-feather="phone" class="mr-2"></i>
+                                TELEFON: 030 1234567
+                            </a>
+                            <a href="https://wa.me/49301234567" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-5 rounded-full transition-all inline-flex items-center justify-center text-md">
+                                <i data-feather="message-square" class="mr-2"></i>
+                                WHATSAPP-NACHRICHT
+                            </a>
+</div>
+</div>
+                </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full bg-gray-200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.123456789012!2d13.3812345!3d52.5182345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMxJzA1LjYiTiAxM8KwMjInNTIuNSJF!5e0!3m2!1sen!2sde!4v1234567890123!5m2!1sen!2sde" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i data-feather="scissors" class="text-secondary mr-2"></i>
+                        <span class="text-xl font-bold">CIWANO BARBERSHOP</span>
+                    </div>
+                    <p class="mt-2">Meisterhafte Haarschnitte seit 2010</p>
+</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-secondary transition-all">Impressum</a>
+                    <a href="#" class="hover:text-secondary transition-all">Datenschutz</a>
+                    <a href="#" class="hover:text-secondary transition-all">AGB</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center">
+                <p>&copy; 2023 Ciwano Barbershop. Alle Rechte vorbehalten.</p>
+</div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Feather icons replacement
+        feather.replace();
+    </script>
+</body>
+</html>
